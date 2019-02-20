@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude 'META-INF/proguard/androidx-annotations.pro'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/assets/', 'src/assets/'] } }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation rootProject.ext.dependencies["support-v4"]
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    //logger library base on orhangout/logger just add set log file folder name function
+    implementation files('libs/logger_jacky_V1.0.0.jar')
+
+    //For RxAndroid
+    implementation rootProject.ext.dependencies["RxAndroid"]
+    implementation rootProject.ext.dependencies["RxJava"]
+    //for permission request
+    implementation rootProject.ext.dependencies["RxPermission"]
+    //for sqlite operation util
+    implementation rootProject.ext.dependencies["litepal"]
+    //for view rx binding event
+    implementation rootProject.ext.dependencies["RxBinding"]
+
+    //for view id bing java object
+    implementation rootProject.ext.dependencies["ButterKnife"]
+    annotationProcessor rootProject.ext.dependencies["ButterKnifeCompiler"]
+
+    //Swipe menu easy_swipe_item_layout like IOS
+    implementation rootProject.ext.dependencies["EasySwipeMenu"]
+
+    //RecyclerView
+    implementation rootProject.ext.dependencies["RecyclerView"]
+    implementation rootProject.ext.dependencies["RecyclerAdapterHelper"]
+
+    //Network request library HTTPS/HTTP get post
+    implementation rootProject.ext.dependencies["Retrofit"]
+    implementation rootProject.ext.dependencies["Gson"]
+    implementation rootProject.ext.dependencies["RetrofitGson"]
+    implementation rootProject.ext.dependencies["RetrofitScalers"]
+    implementation rootProject.ext.dependencies["RetrofitRxJava2"]
+
+
+    //Glide for network picture load
+    implementation rootProject.ext.dependencies["Glide"]
+    annotationProcessor rootProject.ext.dependencies["GlideCompiler"]
+
+
+}
