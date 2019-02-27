@@ -68,5 +68,8 @@ dependencies {
     implementation rootProject.ext.dependencies["Glide"]
     annotationProcessor rootProject.ext.dependencies["GlideCompiler"]
 
+    //Ble bluetooth
+    implementation rootProject.ext.dependencies["Blelib"]
+
 
 }
