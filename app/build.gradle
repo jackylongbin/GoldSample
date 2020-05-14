@@ -29,12 +29,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
     implementation rootProject.ext.dependencies["support-v4"]
     implementation rootProject.ext.dependencies["appcompat-v7"]
     //logger library base on orhangout/logger just add set log file folder name function
     implementation files('libs/logger_jacky_V1.0.0.jar')
-
     //For RxAndroid
     implementation rootProject.ext.dependencies["RxAndroid"]
     implementation rootProject.ext.dependencies["RxJava"]
@@ -44,32 +42,24 @@ dependencies {
     implementation rootProject.ext.dependencies["litepal"]
     //for view rx binding event
     implementation rootProject.ext.dependencies["RxBinding"]
-
     //for view id bing java object
     implementation rootProject.ext.dependencies["ButterKnife"]
     annotationProcessor rootProject.ext.dependencies["ButterKnifeCompiler"]
-
-    //Swipe menu easy_swipe_item_layout like IOS
-    implementation rootProject.ext.dependencies["EasySwipeMenu"]
-
     //RecyclerView
     implementation rootProject.ext.dependencies["RecyclerView"]
     implementation rootProject.ext.dependencies["RecyclerAdapterHelper"]
-
     //Network request library HTTPS/HTTP get post
     implementation rootProject.ext.dependencies["Retrofit"]
     implementation rootProject.ext.dependencies["Gson"]
     implementation rootProject.ext.dependencies["RetrofitGson"]
     implementation rootProject.ext.dependencies["RetrofitScalers"]
     implementation rootProject.ext.dependencies["RetrofitRxJava2"]
-
-
     //Glide for network picture load
     implementation rootProject.ext.dependencies["Glide"]
     annotationProcessor rootProject.ext.dependencies["GlideCompiler"]
-
     //Ble bluetooth
     implementation rootProject.ext.dependencies["Blelib"]
-
-
+    implementation project(':p2plibrary')
+    implementation project(path: ':mvplibrary')
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }

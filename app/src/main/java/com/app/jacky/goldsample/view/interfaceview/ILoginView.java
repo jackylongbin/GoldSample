@@ -1,12 +1,6 @@
 package com.app.jacky.goldsample.view.interfaceview;
 
-public interface ILoginView {
+import com.jacky.mvplibrary.view.IView;
 
-    void showLoginProcess();
-
-    void hideLoginProcess();
-
-    void loginSuccess();
-
-    void loginFailed();
+public interface ILoginView extends IView {
 }

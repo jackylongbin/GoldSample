@@ -58,7 +58,6 @@ ext {
 
             "ButterKnife"               : "com.jakewharton:butterknife:8.8.1",
             "ButterKnifeCompiler"      : "com.jakewharton:butterknife-compiler:8.8.1",
-            "EasySwipeMenu"             : "com.github.anzaizai:EasySwipeMenuLayout:1.1.2",
             "RecyclerView"              : "com.android.support:recyclerview-v7:28.+",
             "RecyclerAdapterHelper"    : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18",
             "Retrofit"                   : "com.squareup.retrofit2:retrofit:2.5.0",

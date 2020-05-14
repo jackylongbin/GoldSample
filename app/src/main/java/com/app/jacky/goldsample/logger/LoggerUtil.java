@@ -1,13 +1,13 @@
 package com.app.jacky.goldsample.logger;
 
 
-import android.support.annotation.Nullable;
-
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.CsvFormatStrategy;
 import com.orhanobut.logger.DiskLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
+
+import androidx.annotation.Nullable;
 
 public class LoggerUtil {
 
