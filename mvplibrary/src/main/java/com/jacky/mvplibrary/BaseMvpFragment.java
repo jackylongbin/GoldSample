@@ -1,10 +1,11 @@
-package com.jacky.mvplibrary.view;
+package com.jacky.mvplibrary;
 
 import android.content.Context;
 
 import com.jacky.mvplibrary.IBaseMvp;
 import com.jacky.mvplibrary.model.IModel;
 import com.jacky.mvplibrary.presenter.BasePresenter;
+import com.jacky.mvplibrary.view.IView;
 
 import androidx.fragment.app.Fragment;
 

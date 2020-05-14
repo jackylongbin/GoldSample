@@ -2,6 +2,7 @@ package com.jacky.mvplibrary;
 
 import android.os.Bundle;
 
+import com.jacky.mvplibrary.IBaseMvp;
 import com.jacky.mvplibrary.model.IModel;
 import com.jacky.mvplibrary.presenter.BasePresenter;
 import com.jacky.mvplibrary.view.IView;
