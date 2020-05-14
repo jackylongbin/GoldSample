@@ -35,7 +35,7 @@
     	 tables again
     -->
     <list>
-        <mapping class="com.app.jacky.goldsample.entity.User" />
+        <mapping class="com.redbee.goldsample.entity.User" />
     </list>
 
     <!--
